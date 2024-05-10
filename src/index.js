@@ -35,6 +35,15 @@ export default {
 			})
 		})
 
+		// return all member for user to find english name easily
+		if (query === "member") {
+			return new Response(JSON.stringify(members_json['data']), {
+				headers: {
+					'content-type': 'application/json',
+				}
+			})
+		}
+
 		// filter graduated members and 箱推し
 		let members = members_json['data'].filter(member => member['graduation'] === 'NO' && member['code'] !== 10001)
 
