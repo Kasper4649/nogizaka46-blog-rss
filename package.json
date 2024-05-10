@@ -1,0 +1,17 @@
+{
+  "name": "nogizaka46-blog-rss",
+  "version": "1.0.0",
+  "description": "A RSS feed for nogizaka46 blog",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "vitest": "1.3.0",
+    "@cloudflare/vitest-pool-workers": "^0.1.0"
+  }
+}
